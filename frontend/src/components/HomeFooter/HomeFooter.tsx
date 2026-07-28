@@ -2,8 +2,9 @@ import "./HomeFooter.css";
 
 import { useEffect, useRef, useState } from "react";
 
-import Logo from "../../assets/HomePage/UsenovStatus_logo.svg";
-// import GithubLogo from "../../assets/HomePage/Github_logo.svg";
+import Logo from "../../assets/HomePage/Usenov_logo.svg";
+
+const FOUNDER_GITHUB_URL = "https://github.com/arseniifrontend";
 
 export function HomeFooter() {
     const footerRef = useRef<HTMLElement | null>(null);
@@ -49,24 +50,13 @@ export function HomeFooter() {
                         className="home-footer-logo home-footer-reveal home-footer-reveal--1"
                         onClick={() => scrollToSection("home")}
                     >
-                        <img src={Logo} alt="Usenov Status" />
+                        <img src={Logo} alt="Usenov Studio" />
 
                         <span className="home-footer-brand-text">
                             <span className="home-footer-brand-name">USENOV</span>
-                            <span className="home-footer-brand-word">STATUS</span>
+                            <span className="home-footer-brand-word">STUDIO</span>
                         </span>
                     </button>
-
-                    {/* <div className="home-footer-socials home-footer-reveal home-footer-reveal--2">
-                        <a
-                            href="https://github.com/ArseniiFrontend/Usenov-Status"
-                            target="_blank"
-                            rel="noreferrer"
-                            aria-label="GitHub"
-                        >
-                            <img src={GithubLogo} alt="" />
-                        </a>
-                    </div> */}
                 </div>
 
                 <div className="home-footer-menu">
@@ -104,7 +94,18 @@ export function HomeFooter() {
                 </div>
 
                 <div className="home-footer-bottom home-footer-reveal home-footer-reveal--8">
-                    <p>© 2026 Usenov Status. Built by ArseniiFrontend. All rights reserved.</p>
+                    <p>© 2026 Usenov Status. All rights reserved.</p>
+                    <p className="home-footer-founder">
+                        © 2026 USENOV Studio · Founded &amp; Developed by{" "}
+                        <a
+                            href={FOUNDER_GITHUB_URL}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Arsenii Usenko GitHub profile"
+                        >
+                            Arsenii Usenko
+                        </a>
+                    </p>
                 </div>
             </div>
         </footer>
