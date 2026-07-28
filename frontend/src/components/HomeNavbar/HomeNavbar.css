@@ -35,14 +35,14 @@
 .home-brand {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 6px;
     color: #ffffff;
     text-decoration: none;
     cursor: pointer;
 }
 
 .home-brand-mark {
-    width: clamp(28px, 5vw, 40px);
+    width: 30px;
     height: auto;
 
     user-select: none;
@@ -55,20 +55,22 @@
     flex-direction: column;
     align-items: flex-start;
     line-height: 1;
+    margin-left: 8px;
+    text-align: left;
 }
 
 .home-brand-name {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 1.4px;
     text-transform: uppercase;
     color: #ffffff;
 }
 
 .home-brand-word {
-    margin-left: 0;
     margin-top: 2px;
-    font-size: 13px;
+    margin-left: 2px;
+    font-size: 10px;
     letter-spacing: 1.4px;
     text-transform: uppercase;
     opacity: 0.8;

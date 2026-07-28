@@ -2,7 +2,7 @@ import "./HomeNavbar.css";
 
 import { useState } from "react";
 
-import Logo from "../../assets/HomePage/UsenovStatus_logo.svg";
+import Logo from "../../assets/HomePage/Usenov_logo.svg";
 
 import MenuIcon from "../../assets/Navbar/navbar-icon.svg";
 import CloseIcon from "../../assets/Navbar/navbar-close.svg";
