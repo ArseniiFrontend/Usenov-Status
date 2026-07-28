@@ -2,105 +2,85 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <meta name="format-detection" content="telephone=no" />
 
-    <title>
-      Usenov Status — Open Source Status Page & Monitoring Platform
-    </title>
-
+    <title>Usenov Status - Open Source Status Page & Uptime Monitoring</title>
     <meta
       name="description"
-      content="Usenov Status is an open source status page and monitoring platform with realtime service checks, embeddable React widgets and Cloudflare Workers infrastructure."
+      content="Usenov Status by ArseniiFrontend is an open-source uptime monitoring platform with realtime service checks, public status pages, React widgets, Cloudflare Workers and Supabase infrastructure."
     />
-
     <meta
       name="keywords"
-      content="status page, uptime monitoring, react status widget, open source monitoring, cloudflare workers, service status dashboard"
+      content="Usenov Status, Usenov, ArseniiFrontend, status page, uptime monitoring, realtime monitoring, React status widget, open source monitoring, Cloudflare Workers, Supabase, service status dashboard, developer tools"
     />
-
+    <meta name="author" content="ArseniiFrontend" />
+    <meta name="creator" content="ArseniiFrontend" />
+    <meta name="publisher" content="USENOV Studio" />
+    <meta name="application-name" content="Usenov Status" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta
+      name="googlebot"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
     <meta name="theme-color" content="#050505" />
+    <meta name="color-scheme" content="dark light" />
 
-    <meta name="robots" content="index, follow" />
-
-    <link
-      rel="canonical"
-      href="https://status.usenov.com"
-    />
-
+    <link rel="canonical" href="https://status.usenov.com/" />
+    <link rel="alternate" href="https://status.usenov.com/" hreflang="en" />
+    <link rel="alternate" href="https://status.usenov.com/" hreflang="x-default" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
 
     <meta
       property="og:title"
-      content="Usenov Status — Open Source Monitoring Platform"
+      content="Usenov Status - Open Source Status Page & Uptime Monitoring"
     />
-
     <meta
       property="og:description"
-      content="Modern realtime status pages and embeddable React widgets for developers."
+      content="Realtime status pages, uptime monitoring and embeddable React widgets for modern developer infrastructure."
     />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://status.usenov.com/" />
+    <meta property="og:site_name" content="Usenov Status" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://status.usenov.com/og_usenovstatus.jpg" />
+    <meta property="og:image:secure_url" content="https://status.usenov.com/og_usenovstatus.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1820" />
+    <meta property="og:image:height" content="1298" />
+    <meta property="og:image:alt" content="Usenov Status monitoring dashboard preview" />
 
-    <meta
-      property="og:type"
-      content="website"
-    />
-
-    <meta
-      property="og:url"
-      content="https://status.usenov.com"
-    />
-
-    <meta
-      property="og:image"
-      content="https://status.usenov.com/og_usenovstatus.jpg"
-    />
-
-    <meta
-      name="twitter:card"
-      content="summary_large_image"
-    />
-
+    <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="Usenov Status"
+      content="Usenov Status - Open Source Status Page & Uptime Monitoring"
     />
-
     <meta
       name="twitter:description"
-      content="Open source status page, uptime monitoring and embeddable React widget."
+      content="Open-source status pages, uptime monitoring and embeddable React widgets by ArseniiFrontend."
     />
+    <meta name="twitter:image" content="https://status.usenov.com/og_usenovstatus.jpg" />
+    <meta name="twitter:image:alt" content="Usenov Status monitoring dashboard preview" />
 
-    <meta
-      name="twitter:image"
-      content="https://status.usenov.com/og_usenovstatus.jpg"
-    />
-
-
-    <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
-    />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       rel="preconnect"
       href="https://fonts.gstatic.com"
       crossorigin
     />
-
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
 
-
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="/logo.svg"
-    />
-
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="apple-touch-icon" href="/logo.svg" />
 
     <script type="application/ld+json">
       {
@@ -110,33 +90,63 @@
             "@type": "SoftwareApplication",
             "@id": "https://status.usenov.com/#software",
             "name": "Usenov Status",
+            "alternateName": "USENOV Status",
             "applicationCategory": "DeveloperApplication",
             "operatingSystem": "Web",
-            "url": "https://status.usenov.com",
-            "description": "Open source status page and monitoring platform with realtime service checks and embeddable React widgets.",
+            "url": "https://status.usenov.com/",
+            "image": "https://status.usenov.com/og_usenovstatus.jpg",
+            "description": "Open-source status page and uptime monitoring platform with realtime service checks, public status dashboards and embeddable React widgets.",
             "author": {
-              "@type": "Organization",
-              "name": "USENOV Studio",
-              "url": "https://usenov.com"
+              "@id": "https://status.usenov.com/#creator"
+            },
+            "creator": {
+              "@id": "https://status.usenov.com/#creator"
+            },
+            "publisher": {
+              "@id": "https://status.usenov.com/#organization"
             },
             "codeRepository": "https://github.com/ArseniiFrontend/Usenov-Status",
             "programmingLanguage": [
               "TypeScript",
               "React"
             ],
-            "isAccessibleForFree": true
+            "softwareRequirements": "Modern web browser",
+            "isAccessibleForFree": true,
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            }
           },
-
           {
             "@type": "WebSite",
             "@id": "https://status.usenov.com/#website",
-            "url": "https://status.usenov.com",
+            "url": "https://status.usenov.com/",
             "name": "Usenov Status",
+            "description": "Official Usenov Status project website for monitoring services, live status and widget setup.",
             "publisher": {
-              "@type": "Organization",
-              "name": "USENOV Studio",
-              "url": "https://usenov.com"
+              "@id": "https://status.usenov.com/#organization"
             }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://status.usenov.com/#organization",
+            "name": "USENOV Studio",
+            "url": "https://usenov.com/",
+            "logo": "https://status.usenov.com/logo.svg",
+            "sameAs": [
+              "https://usenov.com/",
+              "https://github.com/ArseniiFrontend/Usenov-Status"
+            ]
+          },
+          {
+            "@type": "Person",
+            "@id": "https://status.usenov.com/#creator",
+            "name": "ArseniiFrontend",
+            "url": "https://github.com/ArseniiFrontend",
+            "sameAs": [
+              "https://github.com/ArseniiFrontend"
+            ]
           }
         ]
       }
@@ -145,10 +155,6 @@
 
   <body>
     <div id="root"></div>
-
-    <script
-      type="module"
-      src="/src/main.tsx"
-    ></script>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
