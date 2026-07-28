@@ -2,7 +2,7 @@ import "./HomeFooter.css";
 
 import { useEffect, useRef, useState } from "react";
 
-import Logo from "../../assets/HomePage/Usenov_logo.svg";
+import Logo from "../../assets/HomePage/UsenovStatus_logo.svg";
 
 const FOUNDER_GITHUB_URL = "https://github.com/arseniifrontend";
 
