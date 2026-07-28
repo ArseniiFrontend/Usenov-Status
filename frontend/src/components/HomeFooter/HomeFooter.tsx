@@ -104,7 +104,7 @@ export function HomeFooter() {
                 </div>
 
                 <div className="home-footer-bottom home-footer-reveal home-footer-reveal--8">
-                    <p>© 2026 Usenov Status. All rights reserved.</p>
+                    <p>© 2026 Usenov Status. Built by ArseniiFrontend. All rights reserved.</p>
                 </div>
             </div>
         </footer>
